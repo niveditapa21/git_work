@@ -1,0 +1,152 @@
+    1  git --version
+    4  git init
+    8  git status
+    9  git add abc.java new.java sample.java
+   10  git commit -m "commit on sample.java"
+   13  git status
+   14  git add .
+   15  git commit -m "added files"
+   17  git status
+   18  git add .
+   19  git commit -m "modified heloworld.java"
+   21  git status 
+   22  git status
+   23  git add .
+   24  git commit -m "deleted abc.java"
+   25  git log
+   26  git log --oneline
+   27  git rm readme.txt
+   29  git status
+   30  git commit -m "unstaged heloworld.java"
+   31  touch .gitignore
+   32  nano .gitignore
+   33  git add .
+   34  git commit -m "new .gitignore"
+   35  git status
+   39  touch devops.java git.java helo.txt
+   41  git status
+   42  git tag --list
+   43  git log
+   44  git tag --a v1.1 29d2dff1 -m "version of heloworld.java"
+   45  git tag --list
+   48  git add .
+   49  git commit -m "commit on 3 files"
+   50  git log
+   53  git status
+   54  git add .
+   55  git commit -m "added code in file1"
+   56  git status
+   57  git log
+   58  git reset --hard  0d6e3f5
+   59  git status
+   60  git commit -m "Reverting to the state to 0d6e3f5"
+   61  git log
+   62  git add .
+   63  git commit -m "Reverting to the state to 0d6e3f5"
+   67  git status
+   68  git add .
+   69  git commit -m "info added in file1"
+   70  git log
+   71  git revert  0d6e3f5
+   72  git log
+   75  git add .
+   76  git commit -m "added in file2"
+   77  git log
+   78  git revert 9ff3fbe
+   79  git log
+   80  git branch
+   81  git branch b1
+   82  git checkout -b b1
+   83  git checkout b1
+   84  git checkout master
+   85  git branch
+   86  git branch -d b1
+   87  git barnch
+   88  git branch
+   90  git branch defect
+   91  git chcekout defect
+   92  git checkout defect
+   93  git branch
+   96  git add .
+   97  git commit -m "new java files"
+   98  git checkout master
+  100  git branch
+  101  git merge defect
+  102  git status
+  103  git branch
+  104  git checkout defect
+  105  git branch
+  108  git add .
+  109  git commit -m "new china.java at defect"
+  110  git checkout master
+  111  git branch
+  114  git add .
+  115  git commit -m "new china.java at master"
+  116  git merge defect
+  117  git status
+  119  git add .
+  120  git commit -m "merge conflict resolved"
+  121  git status
+  122  git branch
+  123  git branch feature
+  124  git branch
+  125  git checkout feature
+  128  git add .
+  129  git commit -m "commit on file11"
+  131  git add .
+  132  git commit -m "commit on file22"
+  133  git log 
+  134  git branch
+  135  git checkout master
+  137  git checkout feature
+  139  git checkout master
+  140  git merge feature
+  141  git log
+  142  git log --oneline
+  143  git branch
+  144  git checkout feature
+  147  git add .
+  148  git commit -m "commit on file33"
+  150  git checkout master
+  152  git merge --squash feature
+  153  git log
+  154  history | grep git
+  155  history | grep git > git_commands.txt
+  157  cat git_commands.txt
+  158  git branch
+  159  git add  git_commands.txt
+  160  nano .gitignore
+  161  git add .gitignore
+  162  git commit -m "removed *.txt from gitignore"
+  163  git add  git_commands.txt
+  164  git status
+  165  cat git_commands.txt
+  166  git commit -m "git_commands has all history of git commands"
+  167  git remote add origin https://github.com/niveditapa21/git_work.git
+  168  git push origin main 
+  169  git push origin master
+  170  git remote -v
+  171  git fetch
+  172  git pull origin --allow
+  173  git pull origin master --alow
+  174  git pull
+  175  git pull master master
+  176  git pull origin
+  177  git pull master
+  178  git barnch
+  179  git branch
+  180  git pull master
+  181  git remote -v
+  182  git remote add origin https://github.com/niveditapa21/git_work.git
+  183  git fetch
+  184  git pull origin 
+  185  git pull origin master
+  187  nano  github_file.txt
+  188  git push origin master 
+  189  git add github_file.txt
+  190  git commit -m "code change on github_file.txt"
+  191  git push origin master 
+  192  git history
+  193  git --help
+  195  history | grep git
+  196  history | grep git > git_command2.txt
